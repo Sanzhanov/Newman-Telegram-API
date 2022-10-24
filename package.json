@@ -1,0 +1,20 @@
+{
+  "name": "newman-telegram-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node runner.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deasync": "^0.1.28",
+    "dotenv": "^16.0.3",
+    "form-data": "^4.0.0",
+    "newman": "^5.3.2",
+    "newman-reporter-htmlextra": "^1.22.11",
+    "node-fetch": "^2.6.1"
+  }
+}
