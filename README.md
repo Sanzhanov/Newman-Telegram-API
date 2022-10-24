@@ -29,9 +29,9 @@ Try not to make any mistakes here. No quotation marks or another extra character
 
 ---
 ## Usage
-Well, it's time to run your collection and get the report exactly to your Telegram group. Use command: `npm run test`. 
+Well, it's time to run your collection with Newman and get the html-report exactly to your Telegram group. For this use command: `npm run test`. 
 
-In the terminal you can see a special green bar that indicates the progress of running the collection. When the running is over you will receive a notification and an html-report directly to your Telegram group. After sending the report, also you will see a message in the terminal that the report was successfully sent to Telegram.
+Immediately in the terminal you can see a special green bar that indicates the progress of running the collection. When the running is over you will receive a notification and an html-report directly to your Telegram group. After sending the report, also you will see a message in the terminal that the report was successfully sent to Telegram.
 >It is important to note that you can receive such reports in absolutely any Telegram group to which you add your bot with administrator rights.
 
 Also a new directory `report` will appear in the sidebar with an attached file `report.html` inside it. It will be created as part of the Newman run.
@@ -40,23 +40,23 @@ Also a new directory `report` will appear in the sidebar with an attached file `
 ## Examples
 Here you can see examples of notifications and reports received in my group 'API alerts', as well as snippets of the html-report:
 
-<img align="" width="300" src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/screenshot.jpg" alt="screenshot" />
+<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/screen.png" alt="screenshot" />
 
-<img align="" width="300" src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/main.png" alt="main" />
+<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/main.png" alt="main" />
 
-<img align="" width="300" src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/request.png" alt="request" />
+<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/request.png" alt="request" />
 
-<img align="" width="300" src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/response.png" alt="response" />
+<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/response.png" alt="response" />
 
-<img align="" width="300" src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/tests.png" alt="tests" />
+<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/tests.png" alt="tests" />
 
-<img align="" width="300" src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/failed.png" alt="failed" />
+<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/failed.png" alt="failed" />
 
 ---
 ## Additional links
 In this project were used:
 - <a rel="Newman" href="https://www.npmjs.com/package/newman">newman</a>
-- <a rel="NewmanReporter" href="https://www.npmjs.com/package/newman-reporter-htmlextra">newman Reporter htmlextra</a>
+- <a rel="NewmanReporter" href="https://www.npmjs.com/package/newman-reporter-htmlextra/v/1.22.11">newman Reporter htmlextra</a>
 - <a rel="DeAsync.js" href="https://www.npmjs.com/package/deasync/v/0.1.28">DeAsync.js</a>
 - <a rel="Node-Fetch" href="https://www.npmjs.com/package/node-fetch/v/2.6.1">node-fetch</a>
 - <a rel="Form-Data" href="https://www.npmjs.com/package/form-data/v/4.0.0">form-data</a>
