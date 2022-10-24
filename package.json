@@ -1,13 +1,11 @@
 {
   "name": "newman-telegram-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Run your collections with Newman and get html-reports in Telegram",
   "scripts": {
     "test": "node runner.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Alex Sanzhanov",
   "license": "ISC",
   "dependencies": {
     "deasync": "^0.1.28",

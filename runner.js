@@ -5,6 +5,7 @@ const fs = require("fs");
 const fetch = require("node-fetch")
 
 //Running collection with Newman, report generation:
+
 let done
 newman.run({
     collection: process.env.COLLECTION_PATH.toString(), // Collection URL from a public link or the Postman API can also be used
