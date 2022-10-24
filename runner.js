@@ -14,7 +14,7 @@ newman.run({
     iterationCount: 1,
     reporter: {
         htmlextra: {
-            export: "report" + "/apireport.html",
+            export: "report" + "/report.html",
             // template: './template.hbs'
             // logs: true,
             // showOnlyFails: true,
@@ -36,7 +36,7 @@ newman.run({
             // skipSensitiveData: true,
             // showMarkdownLinks: true,
             showFolderDescription: true,
-            // timezone: "Australia/Sydney",
+            // timezone: "US/Boston",
             // skipFolders: "folder name with space,folderWithoutSpace",
             // skipRequests: "request name with space,requestNameWithoutSpace",
             displayProgressBar: true
@@ -72,7 +72,7 @@ fetch(url1, {
 //Sending a report to Telegram:
 
 const url2 = `https://api.telegram.org/bot${process.env.TOKEN}/sendDocument?chat_id=${process.env.CHAT_ID}`
-let readStream = fs.createReadStream('report/apireport.html');
+let readStream = fs.createReadStream('report/report.html');
 let form = new FormData();
 form.append("document", readStream);
 
