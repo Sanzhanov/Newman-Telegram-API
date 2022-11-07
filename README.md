@@ -40,22 +40,17 @@ Here you can see examples of notifications and reports received in my group 'API
 
 <img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/screen1.png" alt="screenshot" />
 
-<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/main.png" alt="main" />
-
-<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/request.png" alt="request" />
-
-<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/response.png" alt="response" />
-
-<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/tests.png" alt="tests" />
-
-<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/failed.png" alt="failed" />
+<img src="https://github.com/Sanzhanov/Newman-Telegram-API/blob/main/examples/report_giff.gif" alt="report_giff" />
 
 ---
 ## Additional links
-In this project were used:
+
+You can find a detailed description of this project in my <a rel="Newman" href="https://dev.to/sanzhanov/run-api-tests-with-newman-and-send-reports-to-telegram-340e">article</a>.
+
+Here were used following dependencies:
 - <a rel="Newman" href="https://www.npmjs.com/package/newman">newman</a>
-- <a rel="NewmanReporter" href="https://www.npmjs.com/package/newman-reporter-htmlextra/v/1.22.11">newman Reporter htmlextra</a>
-- <a rel="DeAsync.js" href="https://www.npmjs.com/package/deasync/v/0.1.28">deasync.js</a>
+- <a rel="NewmanReporter" href="https://www.npmjs.com/package/newman-reporter-htmlextra/v/1.22.11">newman reporter htmlextra</a>
+- <a rel="DeAsync.js" href="https://www.npmjs.com/package/deasync/v/0.1.28">deasync</a>
 - <a rel="Node-Fetch" href="https://www.npmjs.com/package/node-fetch/v/2.6.1">node-fetch</a>
 - <a rel="Form-Data" href="https://www.npmjs.com/package/form-data/v/4.0.0">form-data</a>
 - <a rel="" href="https://www.npmjs.com/package/dotenv">dotenv</a>
