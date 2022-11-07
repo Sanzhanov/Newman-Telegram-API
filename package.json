@@ -1,7 +1,7 @@
 {
   "name": "newman-telegram-api",
   "version": "1.0.0",
-  "description": "Run your collections with Newman and get html-reports in Telegram",
+  "description": "Run your collections with Newman and send html-reports to Telegram",
   "scripts": {
     "test": "node runner.js"
   },
