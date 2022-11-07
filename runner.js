@@ -1,7 +1,7 @@
 require('dotenv').config()
-const newman = require('newman');
-const FormData = require('form-data');
-const fs = require('fs');
+const newman = require('newman')
+const FormData = require('form-data')
+const fs = require('fs')
 const fetch = require('node-fetch')
 
 //Running collection with Newman, report generation:
@@ -42,14 +42,15 @@ newman.run({
             displayProgressBar: true
         }
     }
-}).on('start', () => {
-    console.log(`Running a collection. Please wait a few seconds...`);
-}).on('done', () => {
-    done = true;
 })
-require('deasync').loopWhile(() => {
-    return !done;
-})
+    .on('start', () => {
+        console.log(`Running a collection. Please wait a few seconds...`)
+    }).on('done', () => {
+        done = true
+    })
+    require('deasync').loopWhile(() => {
+        return !done
+    })
 
 //Sending an information notification to Telegram:
 
@@ -57,25 +58,23 @@ const url1 = `https://api.telegram.org/bot${process.env.TOKEN}/sendMessage?chat_
 Your collection has been successfully run. The results are contained in the attached report below.`
 
 fetch(url1, {
-    method: 'GET',
-    headers: {},
-    //body: {}
+    method: 'GET'
 })
     .then((res) => res.json())
     .then((res) => {
-        console.log(res);
+        console.log(res)
     })
     .catch((error) => {
-        console.log(error);
+        console.log(error)
     });
 
 //Sending a report to Telegram:
 
 const url2 = `https://api.telegram.org/bot${process.env.TOKEN}/sendDocument?chat_id=${process.env.CHAT_ID}`
-let readStream = fs.createReadStream('report/report.html');
-let form = new FormData();
+let readStream = fs.createReadStream('report/report.html')
+let form = new FormData()
 
-form.append('document', readStream);
+form.append('document', readStream)
 
 fetch(url2, {
         method: 'POST',
@@ -84,8 +83,8 @@ fetch(url2, {
 )
     .then((res) => res.json())
     .then((res) => {
-        console.log(res, 'The report was successfully sent to Telegram');
+        console.log(res, 'The report was successfully sent to Telegram')
     })
     .catch((error) => {
-        console.log(error);
+        console.log(error)
     })
